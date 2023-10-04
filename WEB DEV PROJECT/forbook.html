@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url("1-spacebg.jpg");
+                opacity: 0.7;
+                background-size: cover;
+                width: 100%;
+            }
+            legend{
+                width:50%;
+            }
+            </style>
+    </head>
+<body>
+    <h1><b><center>Book ur seat</center></b></h1>
+    <form name="myform"><center>
+    <label for="fname"><b>Firstname</b></label>
+    <input type="text" id="fname"><br><br>
+    <b>Lastname</b><input type="text"><br><br>
+    <label for="email"></label><b>E-mail</b></label>
+    <input type="email" id="email"><br>
+    <b>Address</b><br>
+    <textarea rows="4" cols="40"></textarea><br><br>
+    <b>Mobile.No</b><input type="text"><br>
+    <b>Gender</b><br>
+    <input type="radio" id="male" name="fav lang" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="fav lang" value="Female">
+    <label for="female">Female</label><br>
+    <b>Ranges</b><br>
+    <input type="checkbox">Rs.50k-1L<br><input type="checkbox">Rs.1.1L-1.5L<br>
+    <input type="checkbox">Rs.1.6L-2L<br>
+    <input type="checkbox">Rs.2L-2.5L<br>
+    <input type="checkbox">Rs.2.6L-3L<br>
+        <input type="checkbox">Rs.3.1-3.5L<br>
+    <b>State</b>
+    <select>
+    <option value="">TamilNadu</option>
+    <option value="Bangladesh">Kerala</option>
+    <option value="Colombia">Andhra Pradesh</option>
+    <option value="Denmark">Madhya Pradesh</option>
+    <option value="Egypt">Gujarat</option>
+    <option value="France">Kolkata</option>
+    <option value="Georgia">Pune</option>
+    <option value="Haiti">Sikkim</option>
+    <option value="India">Odissa</option>
+    <option value="Jordan">Jammu KAshmir</option>
+    <option value="Kenya">Nepal</option>
+    </select><br><br>
+    Select Screenshot of payment<input type="file">
+    <br><br>
+    Time of registration <input type="time">
+    <br><br>
+    Booking date <input type="date">
+    <br><br>
+    <button type="button" onclick="myfn()">Submit</button>
+    <input type="reset" name="Reset">
+    </center>
+    </form>
+    <div class="left">
+        <img src=""></div>
+        <script>
+            function myfn(){
+                let x = document.forms["myform"]["fname"].value;
+                if (x == "" || x==[1-9]) {
+                alert("Name must be filled out");
+                return false;
+                }
+                let y = document.forms["myform"]["email"].value;
+                if (y == "" || y!=[a-z]+"@gmail.com") {
+                alert("Enter proper email id");
+                return false;
+                }
+}  
+            </script>
+    </body>
+    </html>
